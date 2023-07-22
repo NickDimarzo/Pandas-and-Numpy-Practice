@@ -1,0 +1,22 @@
+CREATING A PYTHON ENVIRONMENT in Visual Studio
+- open terminal 
+- make sure commandprompt is selected not powershell
+- run the following command
+python3.10 -m venv studysession *can call study session whatever you want.
+
+- activate the virtual ENVIRONMENT
+- use the following command
+studysession\Scripts\activate
+
+ - command line should look like this after
+ (studysession) C:\Users\Nick Dimarzo\Desktop\pandas_and_numpy>
+
+- upgrade PiP
+- type the following command
+pip3 install --upgrade pip
+
+- to intall panads run the following command
+pip3 install pandas
+
+- to install numpy run the following command
+pip install numpy

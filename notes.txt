@@ -1,0 +1,21 @@
+notes from the video
+- Numpy is the core library for scientific and numerical computing in python
+- high performance multidimensional array object and tools for working with arrays
+- numpys's main object is the multidimensional array
+- it is a table of elements (usually numbers) all of the same type. indexed by a tuple of positive intergers 
+- in numpy dimensions are called axes
+
+
+- one dimension array:
+0 1 2 3 4 5 6 - one element
+Shape: (6,)
+
+- two dimension array:
+0 1 2 3 - two elements
+4 5 6 7
+Shape:(2,4)
+
+why use Numpy arrray vs python list
+- fast
+- convienient 
+- less memory
