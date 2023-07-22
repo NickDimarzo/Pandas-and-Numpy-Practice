@@ -53,17 +53,42 @@ print(f"This is a matrix with all ones \n{e}")
 # generate an array
 # [0, 1, 2, 3, 4]
 f = np.arange(5)
-print(f"This generate an array based on the range of 5 starting from 0 \n{f}")
-
-
+print(f"\nThis generate an array based on the range of 5 starting from 0 \n{f}")
 
 # concatination example
 # strings
-print("This example shows how the matrix can concatinate strings")
+print("\nThis example shows how the matrix can concatinate strings")
 print(np.char.add(['Hello ', 'Hi '],['abc', 'xyz']))
 
-print("This multiplies the string 'Hello' by 3")
+print("\nThis multiplies the string 'Hello' by 3")
 print(np.char.multiply('Hello ', 3))
 
-print("This centers the word 'Hello' in a string with 20 characters, and fills the remaing space with '-' on each side of the word")
+print("\nThis centers the word 'Hello' in a string with 20 characters, and fills the remaing space with '-' on each side of the word")
 print(np.char.center('Hello', 20, fillchar='-'))
+
+# multiple string examples
+#capitilaize
+print("")
+print(np.char.capitalize('hello world'))
+
+# Title, Capatailize all words in the string
+print("")
+print(np.char.capitalize('numpy is fun'))
+
+# lower, makes all characters lowercase including strings in an array
+print("")
+print(np.char.lower(['HELLO', 'WORLD']))
+print(np.char.lower('HELLO'))
+
+# upper, opposite of lower
+print("")
+print(np.char.upper(['hello', 'world']))
+print(np.char.upper('hello'))
+
+# split, turns a string of words into an array of each individual word
+print("")
+print(np.char.split('are you coming to the party this evening?'))
+
+# splitlines, does the same but splits when there is a new line marker 
+print("")
+print(np.char.splitlines('are you coming to the party this evening? \n because i am going'))
