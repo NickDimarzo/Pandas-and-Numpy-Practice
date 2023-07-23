@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 
+# introduction 
+
 # This is a panada call
 data = pd.Series([1, 2, 3])
 print(f"This a panda table \n{data}")
@@ -55,7 +57,7 @@ print(f"This is a matrix with all ones \n{e}")
 f = np.arange(5)
 print(f"\nThis generate an array based on the range of 5 starting from 0 \n{f}")
 
-# concatination example
+# concatenating strings example
 # strings
 print("\nThis example shows how the matrix can concatinate strings")
 print(np.char.add(['Hello ', 'Hi '],['abc', 'xyz']))
@@ -92,3 +94,18 @@ print(np.char.split('are you coming to the party this evening?'))
 # splitlines, does the same but splits when there is a new line marker 
 print("")
 print(np.char.splitlines('are you coming to the party this evening? \n because i am going'))
+
+# strip, strips the letter 'a' from each string, only if they are leading or trailing letters
+# notice the second a in 'anaita does not get striped
+# more common for punctuation, like reading from csv file in c#
+print("")
+print(np.char.strip(['nina', 'admin', 'anaita'], 'a'))
+
+# join, joins the using the selected characters
+print("")
+print(np.char.join(['.', '-'],['123', '456']))
+
+# replace, replaces selected string with new string
+# replaces the word 'is' with 'was'
+print("")
+print(np.char.replace('He is a good dancer', 'is', 'was'))
