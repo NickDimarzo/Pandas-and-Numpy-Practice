@@ -3,7 +3,7 @@ import numpy as np
 
 # introduction 
 
-# This is a panada call
+# This is a panda call
 data = pd.Series([1, 2, 3])
 print(f"This a panda table \n{data}")
 
@@ -21,7 +21,7 @@ new_range = np.arange(1000)
 a = np.array([[1, 2], [3, 4], [5, 6]])
 print(f"This is a new matrix \n{a}")
 
-# prints the dimmensions for each object in the matrix
+# prints the dimensions for each object in the matrix
 print(f"The dimensions of this matrix are {a.ndim}")
 
 # prints the itemsize of the matrix
