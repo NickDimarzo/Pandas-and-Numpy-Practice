@@ -1,4 +1,5 @@
 import numpy as np
+from matplotlib import pyplot as plt
 
 # practice example 1
 # create a 6*6 two-dimensional array
@@ -54,3 +55,16 @@ print("")
 print("fill the nan values with 0 to clean the data")
 x[inds] = 0  # could use average here instead
 print(x)
+
+# Histogram using matplotlib and pyplot
+a = np.array([20, 25, 45, 58, 93, 12, 36, 15, 79, 46, 65, 23, 62, 54, 75, 13,
+              6, 65, 56, 94, 42, 45, 46, 41, 12, 34])
+plt.hist(a, bins=[0, 20, 40, 60, 80, 100])
+plt.title("Histogram")
+plt.show()
+
+# ploting a sin graph
+b = np.arange(0, 3*np.pi, 0.1)
+y = np.sin(b)
+plt.plot(b, y)
+plt.show()
