@@ -72,3 +72,54 @@ print(data_frame_2.columns)
 print("\nDisplaying the values:")
 print(data_frame_2.values)
 
+# See statistical data of a DataFrame
+print("\nThis is the information produced with the describe command:")
+print(data_frame_2.describe())
+
+# Using Transpose to flip the DataFrame, switch the columns and rows
+print(data_frame_2.T)
+
+# Can sort the data
+print("\nSorting the data within the DataFrame by the animal age:")
+print(data_frame_2.sort_values(by='age'))
+
+# Slicing the DataFrame:
+print("\nSlicing the DataFrame between the 1 and 3 index: returns 2 rows")
+print(data_frame_2[1:3])
+
+# iloc is the same as slice
+print("\nSlicing the DataFrame between the 1 and 3 index: returns 2 rows")
+print(data_frame_2.iloc[1:3])
+
+# Combining the sort and slice to return a different table
+print("\nSorting and slicing will return new DataFrames:")
+data_frame_5 = data_frame_2.sort_values(by='age')[1:3]
+print(data_frame_5)
+
+# Query the DataFrame by tag
+print("\nQuery the DataFrame into 2 columns")
+print(data_frame_2[['age', 'visits']])
+
+# Can create a copy of the DataFrame
+data_frame_6 = data_frame_2.copy()
+print("\nCreating a copy of the DataFrame:")
+print(data_frame_6)
+
+# check if any values in the DataFrame are null:
+print("\nChecking for NaN values:")
+print(data_frame_6.isnull())
+
+# Changing the actual data in the DataFrame:
+# Note: This does not create a new DataFrame like the previous methods, This will change the selected DataFrame
+print("\nChanging the 'age' value at index 'f' to '1.5'")
+data_frame_6.loc['f', 'age'] = 1.5
+print(data_frame_6)
+
+# Finding the mean for values in the DataFrame in a selected column
+print("\nThe mean value for the age column is:")
+print(data_frame_6[['age']].mean())
+
+# Can use all the series operations to calculate values for specified columns:
+print(f"\nThe Sum of all values in the 'visits' column is: {data_frame_2['visits'].sum()}")
+print(f"The min of all values in the 'visits' column is: {data_frame_2['visits'].min()}")
+print(f"The max of all values in the 'visits' column is: {data_frame_2['visits'].max()}")
