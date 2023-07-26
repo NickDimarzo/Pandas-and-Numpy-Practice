@@ -1,0 +1,21 @@
+Pandas Intro
+
+ Pandas is a tool for data processing which helps in data analysis
+ Provides functions and methods to efficiently manipulate large datasets
+ Pandas is a dataframe - rows and columns
+
+ 2 types of Data structures
+ - Series (one-dimensional array)
+ - DataFrame (two-dimensional array)
+
+ Series is a one dimensional array with labels. It can contain any data type
+ including integers, stings, floats and any Python objects
+
+ Index |  Data
+ 1     | 'A'
+ 2     | 'B'
+ 3     | 'C'
+
+ Dataframe is a two-dimensional data structure with labels. We can use labels to locate data
+ row index = df.index
+ column index = df.columns
